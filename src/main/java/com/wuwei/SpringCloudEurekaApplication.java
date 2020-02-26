@@ -1,13 +1,13 @@
-package com.rf.springboot;
+package com.wuwei;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringbootDockerQuickApplication {
+public class SpringCloudEurekaApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringbootDockerQuickApplication.class, args);
+        SpringApplication.run(SpringCloudEurekaApplication.class, args);
     }
 
 }
