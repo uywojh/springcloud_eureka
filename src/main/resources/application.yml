@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: eureka-server
+
+---
+spring:
+  profiles: eureka-server1
+server:
+  port: 7171
+eureka:
+  instance:
+    hostname: 172.16.246.128
+    prefer-ip-address: true
+    instance-id: 172.16.246.128:7171
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://172.16.246.128:7272/eureka/
+
+---
+spring:
+  profiles: eureka-server2
+server:
+  port: 7272
+eureka:
+  instance:
+    hostname: 172.16.246.128
+    prefer-ip-address: true
+    instance-id: 172.16.246.128:7272
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://172.16.246.128:7171/eureka/
