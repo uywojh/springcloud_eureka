@@ -25,7 +25,7 @@ eureka:
   instance:
     hostname: 172.16.246.128      #Eureka实例的主机名
     prefer-ip-address: true
-    instance-id: 172.16.246.128:872
+    instance-id: 172.16.246.128:8762
   client:
     serviceUrl:
       defaultZone: http://172.16.246.128:8761/eureka/,http://172.16.246.128:8763/eureka/
