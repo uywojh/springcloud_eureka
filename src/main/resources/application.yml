@@ -34,19 +34,3 @@ eureka:
       register-with-eureka: true
   server:
     peer-node-read-timeout-ms: 12000     #Eureka注册超时时间设置
----
-server:
-  port: 8763
-spring:
-  profiles: eureka-server3
-eureka:
-  instance:
-    hostname: 172.16.246.128    #Eureka实例的主机名
-    prefer-ip-address: true
-    instance-id: 172.16.246.128:8763
-  client:
-    serviceUrl:
-      defaultZone: http://172.16.246.128:8761/eureka/,http://172.16.246.128:8762/eureka/
-      register-with-eureka: true
-  server:
-    peer-node-read-timeout-ms: 12000    #Eureka注册超时时间设置
