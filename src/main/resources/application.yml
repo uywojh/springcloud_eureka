@@ -14,7 +14,7 @@ eureka:
     instance-id: 172.16.246.128:8761
   client:
     serviceUrl:
-      defaultZone: http://172.16.246.128:8762/eureka/,http://172.16.246.128:8763/eureka/  #Eureka节点相互注册
+      defaultZone: http://172.16.246.128:8762/eureka/  #Eureka节点相互注册
       register-with-eureka: true
   server:
     peer-node-read-timeout-ms: 12000     #Eureka注册超时时间设置
@@ -30,7 +30,7 @@ eureka:
     instance-id: 172.16.246.128:8762
   client:
     serviceUrl:
-      defaultZone: http://172.16.246.128:8761/eureka/,http://172.16.246.128:8763/eureka/
+      defaultZone: http://172.16.246.128:8761/eureka/
       register-with-eureka: true
   server:
     peer-node-read-timeout-ms: 12000     #Eureka注册超时时间设置
